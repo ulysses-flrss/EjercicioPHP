@@ -1,8 +1,8 @@
 <?php 
 
     session_start();
-
-    $codigoEmpleado = $;
+    
+    $codigoEmpleado;
     $nombreCompleto;
     $cargoEmpleado;
     $sueldoBase;
@@ -12,13 +12,7 @@
 
     $descuentoISSS = $sueldoBase * 0.030;
     $descuentoAFP = $sueldoBase * 0.0725;
-    $descuentoRenta = ($sueldoBase < 526) {
-        $descuentoRenta =  "NO PAGAS RENTA";
-    } else if ($sueldoBase >= 526) {
-        $descuentoRenta = $sueldoBase * 0.10;
-    } else {
-        $descuentoRenta = "Número Invalido, Porfavor Contacte con su Empresa"
-    };
+    $descuentoRenta;
     $sueldoLiquido = $sueldoBase - ($descuentoISSS - $descuentoAFP - $descuentoRenta);
 
 
@@ -35,7 +29,13 @@
         </tr>
 
         <tr>
-            
+            <td>"$_SESSION['']"</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>"
 ?>
