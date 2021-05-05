@@ -33,4 +33,8 @@
       }   mysqli_free_result($q);
     ?>
   </body>
+<<<<<<< Updated upstream
 </html>
+=======
+</html>
+>>>>>>> Stashed changes
