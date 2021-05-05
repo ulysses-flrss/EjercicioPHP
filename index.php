@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio PHP - Equipo 6</title>
   </head>
+  
+  <body>
     <?php 
       $conectar = @mysqli_connect('localhost', 'root', '', 'registrostmh');
         if (!$conectar) {
@@ -30,3 +32,5 @@
           echo "<link href = '../estilosregister.css' type = 'text/css' rel = 'stylesheet'> <p class = 'stylePassword'>Correo o Contraseña Incorrectos</p> <a href = ../Español/login.html>Volver a Intentar</a>";
       }   mysqli_free_result($q);
     ?>
+  </body>
+    
