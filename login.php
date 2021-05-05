@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="Perfil.css">
 </head>
-
-<body><center>
-<?php 
-      <br><br><br>
-        <form action="../PHP/login.php">
-        <label for="Correo">Ingrese Su codigo:</label>
-        <br><br>
-        <input type="text" name="Usuario" id="usuario" placeholder="Ejemplo: B1" required>
-        <br><br>
-        <label for="Contraseña">Ingrese Su Contraseña:</label>
-        <br><br>
-        <input type="password" name="Contraseña" id="Contraseña" placeholder="" required>
-        
-
-        <input type="submit" value="Iniciar Sesion" class="enviar">
+<body>
+    <div class="loginbox">
+    <form>
+    <label for="username">Username: </label>
+    <input type="text" name="usuario" placeholder="Username">
+    <label for="password">Contraseña: </label>
+    <input type="password" name="pass" placeholder="Enter your password">
+    <input type="submit" name="passaway" placeholder="login">
     </form>
-
-</body></center>
+    </div>
+</body>
 </html>
