@@ -2,15 +2,17 @@
 
     session_start();
 
-    $_SESSION['empleado'];
-
-    $codigoEmpleado;
+    $codigoEmpleado = $;
     $nombreCompleto;
     $cargoEmpleado;
     $sueldoBase;
-    $descuentoISSS;
-    $descuentoAFP;
+    
+
+    //Funciones de Descuentos
+
+    $descuentoISSS = $sueldoBase * 0.030;
+    $descuentoAFP = $sueldoBase * 0.0725;
     $descuentoRenta;
-    $sueldoLiquido;
+    $sueldoLiquido = $sueldoBase - ($descuentoISSS - $descuentoAFP - $descuentoRenta);
 
 ?>
