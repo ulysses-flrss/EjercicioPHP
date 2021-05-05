@@ -8,10 +8,10 @@
 <body>
     <center>
     <br><br><br>
-    <form action="Empleado/empleado.php" method = "get">
+    <form action="Empleado/empleado.php" method = "">
       <label for="Correo">Ingrese Su codigo:</label>
       <br><br>
-      <input type="text" name="Usuario" id="usuario" placeholder="Ejemplo: B1" required>
+      <input type="text" name="usuario" id="usuario" placeholder="Ejemplo: B1" required>
       <br><br>
       <label for="Contraseña">Ingrese Su Contraseña:</label>
       <br><br>
@@ -22,7 +22,7 @@
 
   <?php 
   
-    $_SESSION['Usuario'] = array($);
+    $_SESSION['Datos'] = array($codigo = $_GET['usuario']);
 
   ?>
 
