@@ -7,21 +7,19 @@
     <title>Login</title>
 </head>
 
-<body><center>
-<?php 
-      <br><br><br>
-        <form action="../PHP/login.php">
-        <label for="Correo">Ingrese Su codigo:</label>
-        <br><br>
-        <input type="text" name="Usuario" id="usuario" placeholder="Ejemplo: B1" required>
-        <br><br>
-        <label for="Contraseña">Ingrese Su Contraseña:</label>
-        <br><br>
-        <input type="password" name="Contraseña" id="Contraseña" placeholder="" required>
-        
-
-        <input type="submit" value="Iniciar Sesion" class="enviar">
+<body>
+    <center>
+    <br><br><br>
+    <form action="../PHP/login.php">
+      <label for="Correo">Ingrese Su codigo:</label>
+      <br><br>
+      <input type="text" name="Usuario" id="usuario" placeholder="Ejemplo: B1" required>
+      <br><br>
+      <label for="Contraseña">Ingrese Su Contraseña:</label>
+      <br><br>
+      <input type="password" name="Contraseña" id="Contraseña" placeholder="" required>
+      <input type="submit" value="Iniciar Sesion" class="enviar">
     </form>
-
-</body></center>
+  </center>
+</body>
 </html>
