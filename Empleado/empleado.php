@@ -8,8 +8,8 @@
 
     $descuentoISSS = "$" . $_SESSION['datos'][3] * 0.030;
     $descuentoAFP = "$" .  $_SESSION['datos'][3] * 0.0725;
-    $descuentoRenta;
-    $sueldoLiquido = $sueldoBase - ($descuentoISSS - $descuentoAFP - $descuentoRenta);
+    //$descuentoRenta;
+    //$sueldoLiquido = $_SESSION['datos'][3] - ($descuentoISSS - $descuentoAFP);
 
 
     echo 
@@ -22,18 +22,21 @@
             <th>Descuento ISSS</th>
             <th>Descuento AFP</th>
             <th>Descuenta Renta</th>
+            <th>Sueldo Liquido</th>
         </tr>
 
         <tr>";
+        tabla();
             "<td>".$descuentoISSS."</td>
-            <td>".$descuentoAFP."</td>
-            <td>".$descuentoRenta."</td>
-            <td>".$sueldoLiquido."</td>
-        </tr>
+            <td>".$descuentoAFP."</td>";
+            //"<td>".$descuentoRenta."</td>
+            //;<td>".$sueldoLiquido."</td>
+        "</tr>
     </table>";
 
-    
-    foreach ($_SESSION['datos'] as $valor) {
-        echo "<td>".$valor."</td>";
+    function tabla(){    
+        foreach ($_SESSION['datos'] as $valor) {
+            echo "<td>".$valor."</td>";
+        }
     }
 ?>
