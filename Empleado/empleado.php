@@ -31,17 +31,13 @@
         foreach ($_SESSION['datos'] as $valor) {
             echo "<td>".$valor."</td>";
         }; 
-            
+
             "<td>"; echo $descuentoISSS;"</td>
             <td>".$descuentoAFP."</td>";
             //"<td>".$descuentoRenta."</td>
             //;<td>".$sueldoLiquido."</td>
         "</tr>
     </table>";
-
-    echo $descuentoAFP;
-    echo $descuentoISSS;
-
       
     
 ?>
