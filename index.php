@@ -8,7 +8,7 @@
 <body>
     <center>
     <br><br><br>
-    <form action="validacion.php" method = "GET">
+    <form action="validacion.php" method = "POST">
       <label for="Correo">Ingrese Su codigo:</label>
       <br><br>
       <input type="text" name="code" id="code" required>

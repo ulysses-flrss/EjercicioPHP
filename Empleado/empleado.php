@@ -29,7 +29,7 @@
         </tr>
 
         <tr>
-            <td>"$_SESSION['']"</td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -37,5 +37,5 @@
             <td></td>
             <td></td>
         </tr>
-    </table>"
+    </table>";
 ?>
