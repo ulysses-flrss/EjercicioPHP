@@ -26,7 +26,11 @@
         </tr>
 
         <tr>";
-        tabla();
+        
+        foreach ($_SESSION['datos'] as $valor) {
+            echo "<td>".$valor."</td>";
+        }; 
+
             "<td>".$descuentoISSS."</td>
             <td>".$descuentoAFP."</td>";
             //"<td>".$descuentoRenta."</td>
@@ -34,9 +38,6 @@
         "</tr>
     </table>";
 
-    function tabla(){    
-        foreach ($_SESSION['datos'] as $valor) {
-            echo "<td>".$valor."</td>";
-        }
-    }
+      
+    
 ?>
