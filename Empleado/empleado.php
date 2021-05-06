@@ -2,7 +2,7 @@
 
     session_start();
     
-    $codigoEmpleado = $_SESSION['id'][];
+    $codigoEmpleado = $_SESSION['id'];
     $nombreCompleto;
     $cargoEmpleado;
     $sueldoBase;
@@ -19,7 +19,7 @@
     echo 
     "<table>
         <tr>
-            <th>Código Empleado</th>
+            <th>Código de Empleado</th>
             <th>Nombre Completo</th>
             <th>Cargo</th>
             <th>Sueldo Base</th>
@@ -29,14 +29,14 @@
         </tr>
 
         <tr>
-            <td>"$codigoEmpleado"</td>
-            <td>"$nombreCompleto"</td>
-            <td>"$cargoEmpleado"</td>
-            <td>"$sueldoBase"</td>
-            <td>"$descuentoISSS"</td>
-            <td>"$descuentoAFP"</td>
-            <td>"$descuentoRenta"</td>
-            <td>"$sueldoLiquido"</td>
+            <td>".$codigoEmpleado."</td>
+            <td>".$nombreCompleto."</td>
+            <td>".$cargoEmpleado."</td>
+            <td>".$sueldoBase."</td>
+            <td>".$descuentoISSS."</td>
+            <td>".$descuentoAFP."</td>
+            <td>".$descuentoRenta."</td>
+            <td>".$sueldoLiquido."</td>
         </tr>
     </table>";
 ?>
