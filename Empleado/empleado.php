@@ -2,10 +2,6 @@
 
     session_start();
     
-    $codigoEmpleado = $_SESSION['id'];
-    $nombreCompleto;
-    $cargoEmpleado;
-    $sueldoBase;
     
 
     //Funciones de Descuentos
@@ -39,4 +35,8 @@
             <td>".$sueldoLiquido."</td>
         </tr>
     </table>";
+
+    foreach ($_SESSION['datos'] as $valor) {
+            echo "<td>$valor</td>";
+    }
 ?>
