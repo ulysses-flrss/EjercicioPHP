@@ -17,9 +17,7 @@
       <br><br>
       <input type="password" name="password" id="password" placeholder="" required>
       <input type="submit" value="Iniciar Sesion" class="enviar">
-    </form>
-    <a href="login Contador.php">Inicia Sesión como Contador</a> <!-- si se te ocurre algo mejor, lo pones -->
-    
+    </form>    
   </center> 
 
  
