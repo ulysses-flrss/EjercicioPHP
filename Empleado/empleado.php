@@ -6,8 +6,8 @@
 
     //Funciones de Descuentos
 
-    $descuentoISSS = $sueldoBase * 0.030;
-    $descuentoAFP = $sueldoBase * 0.0725;
+    $descuentoISSS = "$" . $_SESSION['datos'][3] * 0.030;
+    $descuentoAFP = "$" .  $_SESSION['datos'][3] * 0.0725;
     $descuentoRenta;
     $sueldoLiquido = $sueldoBase - ($descuentoISSS - $descuentoAFP - $descuentoRenta);
 
@@ -24,19 +24,16 @@
             <th>Descuenta Renta</th>
         </tr>
 
-        <tr>
-            <td>".$codigoEmpleado."</td>
-            <td>".$nombreCompleto."</td>
-            <td>".$cargoEmpleado."</td>
-            <td>".$sueldoBase."</td>
-            <td>".$descuentoISSS."</td>
+        <tr>";
+            "<td>".$descuentoISSS."</td>
             <td>".$descuentoAFP."</td>
             <td>".$descuentoRenta."</td>
             <td>".$sueldoLiquido."</td>
         </tr>
     </table>";
 
+    
     foreach ($_SESSION['datos'] as $valor) {
-            echo "<td>$valor</td>";
+        echo "<td>".$valor."</td>";
     }
 ?>
