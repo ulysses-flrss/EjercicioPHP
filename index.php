@@ -8,23 +8,18 @@
 <body>
     <center>
     <br><br><br>
-    <form action="Empleado/empleado.php" method = "">
+    <form action="validacion.php" method = "GET">
       <label for="Correo">Ingrese Su codigo:</label>
       <br><br>
-      <input type="text" name="usuario" id="usuario" placeholder="Ejemplo: B1" required>
+      <input type="text" name="code" id="code" required>
       <br><br>
       <label for="Contraseña">Ingrese Su Contraseña:</label>
       <br><br>
-      <input type="password" name="Contraseña" id="Contraseña" placeholder="" required>
+      <input type="password" name="password" id="password" placeholder="" required>
       <input type="submit" value="Iniciar Sesion" class="enviar">
     </form>
   </center> 
 
-  <?php 
-  
-    $_SESSION['Datos'] = array($codigo = $_GET['usuario']);
-
-  ?>
-
+ 
 </body>
 </html>
