@@ -2,18 +2,16 @@
 
     session_start();
     
-    $codigoEmpleado = $_SESSION['id'][];
-    $nombreCompleto;
-    $cargoEmpleado;
-    $sueldoBase;
+
+    $sueldoBase = $_SESSION['datos'][3];
     
 
     //Funciones de Descuentos
 
     $descuentoISSS = $sueldoBase * 0.030;
     $descuentoAFP = $sueldoBase * 0.0725;
-    $descuentoRenta;
-    $sueldoLiquido = $sueldoBase - ($descuentoISSS - $descuentoAFP - $descuentoRenta);
+    //$descuentoRenta;
+    $sueldoLiquido = $sueldoBase - ($descuentoISSS - $descuentoAFP);
 
 
     echo 
@@ -33,13 +31,16 @@
         foreach ($_SESSION['datos'] as $valor) {
             echo "<td>".$valor."</td>";
         }; 
-
-            "<td>".$descuentoISSS."</td>
+            
+            "<td>"; echo $descuentoISSS;"</td>
             <td>".$descuentoAFP."</td>";
             //"<td>".$descuentoRenta."</td>
             //;<td>".$sueldoLiquido."</td>
         "</tr>
     </table>";
+
+    echo $descuentoAFP;
+    echo $descuentoISSS;
 
       
     
