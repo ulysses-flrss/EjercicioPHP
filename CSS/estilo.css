@@ -23,7 +23,7 @@ label {
 .inptxt {
     font-size: 1.5vw;
     text-align: center;
-    border: 2px solid black;
+    border: none;
     width: 20vw;
     height: 2vw;
     box-shadow: 3px 3px #000000;
@@ -31,8 +31,10 @@ label {
 }
 
 input.inptxt:focus{
-    border: 1000px solid black;
-    background-color: #000;
+    transition: 400ms;
+    transform: scale(1.10);
+    border: 2px solid black;
+    box-shadow: none;
 }
 
 
@@ -69,5 +71,5 @@ div.form {
     box-shadow: 3px 2px 5px;
     width: 33vw;
     height: 80vh;
-    margin:5vw 35vw;
+    margin:2vw 35vw;
 }
