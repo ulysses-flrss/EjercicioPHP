@@ -13,19 +13,14 @@
 <?php 
     session_start();
 
-
-    require_once('funciones.php');
-
-
-    $id = $_SESSION['datos'] [0];
-    $name = $_SESSION['datos'] [1];
-    $cargo = $_SESSION['datos'][2];
-    $sueldo = $_SESSION['datos'] [3];
-    $descuentoISSS = $sueldo * 0.030;
-    $descuentoAFP = $sueldo * 0.0725;
-    $descuentoRenta = $sueldo *0.10;
-    $sueldoLiquido = $sueldo - $descuentoISSS - $descuentoAFP - $descuentoRenta;
-
+    $id = $_SESSION['id'] = $_SESSION['datos'] [0];
+    $name = $_SESSION['name'] = $_SESSION['datos'] [1];
+    $cargo = $_SESSION['cargo'] = $_SESSION['datos'][2];
+    $sueldo = $_SESSION['sueldo'] = $_SESSION['datos'] [3];
+    $descuentoISSS = $_SESSION['descISSS'] = $sueldo * 0.030;
+    $descuentoAFP = $_SESSION['descAFP'] = $sueldo * 0.0725;
+    $descuentoRenta = $_SESSION['descR']= $sueldo *0.10;
+    $sueldoLiquido = $_SESSION['liquido']= $sueldo - $descuentoISSS - $descuentoAFP - $descuentoRenta;
 
     echo "<p class = 'welcome'>Bienvenido/a: " . $name . "</p>";
 
