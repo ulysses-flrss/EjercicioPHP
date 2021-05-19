@@ -23,10 +23,16 @@ label {
 .inptxt {
     font-size: 1.5vw;
     text-align: center;
-    border: none;
+    border: 2px solid black;
     width: 20vw;
     height: 2vw;
     box-shadow: 3px 3px #000000;
+    outline: none;
+}
+
+input.inptxt:focus{
+    border: 1000px solid black;
+    background-color: #000;
 }
 
 
@@ -38,7 +44,6 @@ input.send {
     font-weight: 500;
     color: #FFF;
     background-color:#047521;
-    border-radius: 12px;
     border: 3px #000000 solid ;
 }
 
@@ -55,6 +60,7 @@ input.send:active {
 div.log1, div.log2 {
     margin: 2vw 2vw 7vw 2vw;
 }
+
 
 div.form {
     display: flex;

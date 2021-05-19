@@ -4,7 +4,7 @@ table {
 }
 
 p.welcome {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2.5vw;
     text-align: center;
@@ -17,7 +17,45 @@ table.org, th, tr, td {
     text-align: center;
 }
 
+th {
+    background-color: #7b97f4;
+}
+
+td {
+    background-color: #e8edfd;
+}
+
 th,td {
     padding: 1vw;
+}
+
+.cerrarSesion  {
+    display: flex;
+    margin: 2.5vw 45vw;
+}
+
+#cierreB {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #0266fb;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1vw;
+}
+
+#cierreB:hover {
+    transition: all 400ms;
+    background-color: #01409e;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+#cierreB:active {
+    transition: ease 250ms;
+    background-color: #002051;
+    color: #FFFFFF;
+    transform: scale(1.25);
 }
 

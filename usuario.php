@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario </title>
-    <link rel="stylesheet" href="usuario.css">
+    <link rel="stylesheet" href="CSS/usuario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php 
     session_start();
+
+
+    require_once('funciones.php');
+
 
     $id = $_SESSION['datos'] [0];
     $name = $_SESSION['datos'] [1];
@@ -48,7 +54,12 @@
                 <td> $".$sueldoLiquido."</td>
             </tr>
 
-        </table>"
+        </table>";
+
+        echo "
+            <div class = 'cerrarSesion'>
+            <a id = 'cierre' href = cerrarSesion.php><button id = 'cierreB'>Cerrar Sesión</button></a>
+        </div>";
 ?>
 </body>
 </html>
